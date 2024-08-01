@@ -1,0 +1,151 @@
+ 
+
+
+
+
+DSA2020: Artificial Intelligence
+Instructor: Professor Edward Ombui
+
+
+
+
+
+
+PROJECT: Developing an AI Application for Sustainable Development Goals (SDGs)
+By: Alexia Mbagaya (667313) and Angel Musomba(667539)
+
+
+
+
+
+CHAPTER 1
+1. Introduction
+In the 21st century, we have been able to witness Artificial Intelligence as one of the most transformative and influential technologies. It can perform complex tasks, be creative and mimic human intelligence. (Farooq, 2024)
+Currently, we have been able to see such smart technologies revolutionize the workplaces of the future. We have seen AI span across different sectors such as Finance, Healthcare, Marketing, Agriculture, and more so Education.
+According to Loeckx, AI could be a powerful tool that helps both teachers and students have an enhanced and improved teaching and learning experience. (Zhai et al.,2021) 
+1.2 Sustainable Development Goal number 3: Quality Education
+According to The Cambridge dictionary, education is defined as the process of teaching or learning, especially in a school or a college. Education ensures that one is able to survival as it maintains it intellectual, cultural and economic development.
+
+1.2.1 Artificial Intelligence in the Education Sector
+1.	Augmentation and Automation
+With a global teacher shortage, integrating AI into education helps streamline admin tasks and allows teachers to interact with students more. Automating routine duties like attendance or making of reports we can create an environment where teachers are able to give a richer learning experience. AI is supplement teachers’ roles and not replace them.
+2.	Refining assessment and analytics in education
+AI based evaluations offer instructors with invaluable insights. It allows teachers to hasten the assessment process, give timely feedback to students and aid the engagement process. 
+3.	Supporting AI and digital literacy
+AI paves way for learners to improve on their skills. These skills are reading and writing, critical thinking, problem-solving, creativity and even job preparation. For optimal results, integration of AI into traditional education methods is key to shaping well learned learners.
+4.	Personalizing learning content and experience
+Research has shown that self-paced learning significantly increases learning outcomes. AI has been used to personalize learning materials for everyone, enhancing academics. Example of such is Intelligent Tutoring Systems. We have seen neurodivergent students and differently abled people particularly benefiting from the boom of AI in the education sector.
+(Milberg, 2024)
+
+
+5.	Student Support for Chatbots
+Education Institutions are utilizing chatbot that can support learner’s queries, connecting students with institutional and course information, or chatbots like ChatGPT that help students conceptualize ideas.
+CHAPTER 2
+2.1 PROBLEM STATEMENT
+Opinions and sentiments are vital pieces of data that help stakeholders or even individuals want to understand what other people are thinking. Gathering insights about how people perceive a certain product or project allows managers to make informed decisions and devise effective strategies to improve reviews. Thanks to advancements in AI, we have been able to decipher public views.
+Sentiment Analysis is also known as opinion mining. This is where textual data is analysed and categorized to determine the overall sentiment expressed. Traditionally, sentiment analysis was a labour intensive and time-consuming task that humans performed. They had to read and interpret large amounts of text but die to AI and Natural Language Processing techniques, we have seen massive improvements in the process. (The, 2024)
+In Education, we see students being handed out surveys to rate their instructors. Most of the time, these surveys are neglected due to the process of evaluating them is very manual and tedious. The aim of this project is to automate and enhance the process of evaluating sentiments.
+It is important that students’ opinions are taken into careful consideration. With their opinions we can see if they think they are receiving the help and learning experience that they want and need. Using their sentiments, we are also able to evaluate an instructor’s performance amongst the students and if there should be any cause for concern.
+
+2.2 SOLUTION OVERVIEW
+We aim to provide an AI-driven solution which will be able to monitor and analyse student feedback. Our AI solution will be able to analyse the student comments by looking at the language or words used, and the tone. With our solution, teachers will be able to receive constructive feedback that will help them grow and better serve their students.
+
+2.3 ASSIGNED TASKS FOR THE NEXT MILESTONE
+Angel - Look for the from Kaggle or any other dataset website that will be used to train and test the model.
+Alexia - Assessing and identifying the most relevant AI technique to be utilized in our project.
+Collaboration – Brainstorming on the design of the project and deciding on the approach and settling on the target problem that we would like to resolve.
+DESIGN FOR SENTIMENT ANALYSIS
+For our sentiment analysis classifier, we will be looking at three different types of sentiments. 
+Positive Sentiments – They show that students are satisfied and appreciative for the learning experience, teaching method or course that they are taking.
+Negative Sentiments – They depict dissatisfaction, challenges, and annoyances that the students face. Some examples are instructions that are not clear, hard to understand instructions and lack of assistance.
+Neutral Sentiments – They reflect indifferent feelings. They indicate a lack of either extremely strong or negative feelings towards the education they are receiving. 
+When these sentiments are well understood, the learning experience can be more tailored to addressing pressing issues, whilst creating an engaging environment that ultimately leads to student success. 
+(Effective Strategies for Student Sentiment Analysis in Education, n.d.)
+1.	DATA COLLECTION
+We will obtain this data by conducting online surveys and questionnaires filled by the students. This allows us to collect structured data on the students’ sentiments, experiences and preferences. 
+2.	GETTING STARTED WITH SENTIMENT ANALYSIS
+To use various algorithms on our data, we will use a variety of algorithms which are in the library NLTK. This will allow us to obtain insights from linguistic data.
+Natural Language Tool Kit (NTLK) provides an easy-to-use interface for a wide variety of tasks. These include tokenization, stemming, lemmatization, parsing, and sentiment analysis.
+THREE WAYS TO CONDUCT SENTIMENT ANALYSIS
+a)	Lexicon-Based analysis
+This type of analysis uses the NLTK VADER sentiment analyser. VADER (Valence Aware Dictionary and sentiment Reasoner) uses a set of predefines rules or heuristics to determine the view of a piece of text. The rules are based on the presence of either positive words or negative words. Its advantage is that it is very easy to implement but the drawback is that it may not be as accurate ML-based or transformer-based approaches.
+b)	Machine Learning
+Sentiments are identified using a set of labelled training data. These models can be trained using ML algorithms like linear regression, decision trees, support vector machines (SVMs), and neural networks. They are more accurate than rule-based analysis, but they need large amounts of training data, and it is expensive on resources.
+c)	Pre-trained transformer-based deep learning
+A deep- learning based approach is today seen with GPT-4. It involves using pre-trained models on large amounts of data. Complex neural networks are used to encode the context and gather the meaning of the data. Though they are the most accurate, they require larger amounts of test data, they are computationally tasking and would not be practical for all use cases.
+
+PREPROCESSING TEXT
+Before utilizing our data, we must ensure that our data is cleaned and normalized. This makes our work of analysing easier. This step comprises of techniques that help transform raw text data into a form that the model can utilize. 
+ 
+Some of the preprocessing techniques include:
+1.	Tokenization – This involves breaking down phrases or statements into single words and punctuation marks from the raw text making it easier to understand. 
+2.	Stop Words – Removing irrelevant words that do not add any meaning to the overall statement. Examples of stop words are ‘and’, ‘as’, ‘the’, ‘of’, and ‘it’. These words create noise skewing the analysis if they are not removed.
+3.	Stemming and Lemmatization – These two are techniques which are used to reduced words into their root forms. Stemming works by removing suffixes from words. i.e removing “ing” or “ed” from their base forms. Lemmatization involves reducing words to their base form based on their part of speech.
+4.	Bag of Words (BoW) Model – This involves representing text data as a set of numerical characters. It is useful as most ML algorithms typically use numerical input. It is typically conducted when one is working with labelled data and if we are building a supervised model.
+
+After preprocessing, the data will be split into Training and Validation Data. It will then be networks like BERT. 
+We intend on trying all these regression models or algorithms so that we can be able to analyze and see which model is the best and most accurate at conducting the sentiment analysis.
+
+FINETUNING BERT
+To carry out sentiment analysis, we will be finetuning BERT. BERT (Bidirectional Encoder Representations from Transformers) is a model that was developed b Google that is often adapted for NLP tasks.
+CHAPTER 3
+EVALUATION REPORT
+This report evaluates the performance and potential impact of the Course Feedback Sentiment Analysis Application developed using BERT (Bidirectional Encoder Representations from Transformers). The application aims to classify course feedback into five sentiment categories: very negative, negative, neutral, positive, and very positive. 
+Introduction
+The model is designed to help educational institutions automatically categorize student feedback into distinct sentiment categories. Leveraging BERT's capabilities and excellent performance on NLP applications, it aims to provide relevant insights that would drive action towards improvements in course content and teaching methods. This would consequently enhance student’s experience and understanding
+Preprocessing
+ The data was tokenized by BERT’s tokenizer into input ids, token type ids and attention masks. The labels were then converted from strings to integers in the following way:
+‘Very positive’: 5
+‘positive’: 4
+‘neutral’: 3
+‘negative’: 2
+‘Very negative’: 1
+Training, evaluation and model performance
+The model was fine-tuned on a dataset of course feedback collected from various sources. The data was pre-processed and split into training (80%) and validation (20%) sets. The BERT model was trained for three epochs with a batch size of 8, and the following evaluation metrics were used:
+Accuracy: 97.6%
+Precision: 0.976
+Recall: 0.976
+F1 Score: 0.976
+These performance metrics indicate a fairly good performance given that this is multi-class classification which is generally less accurate than sentiment analysis with two categories (negative and positive).
+CHALLENGES FACED
+Misclassification
+The confusion matrix revealed that while the model accurately classifies strongly positive and negative feedback, there is some misclassification in the neutral and moderately positive/negative categories. This can be attributed to the more subtle differences in language used by students that are understandable to the human ear, but can be challenging to distinguish for the model.
+
+Data Quality
+The dataset used for training the model was diverse, encompassing feedback from various courses, departments, and student demographics. However, some limitations were noted:
+
+Imbalance in Class Distribution: There was more negative than positive feedback. This is presumably because students are more likely to give detailed feedback if they were frustrated with a course offering than if they were pleased or satisfied.
+Data that is difficult to classify: Some feedback entries contained mixed sentiments, making it challenging to assign a single label.
+Irrelevant data: Because course evaluations are mandatory, some of the data received was irrelevant, such as one blank space or numeric data.
+Preprocessing was done to deal with issues pertaining to data quality.
+
+Potential Impact
+a)	For Educational Institutions
+Improved Course Quality: By identifying common themes in student feedback, institutions can enhance course content and teaching methods.
+Increased Student Satisfaction: Proactive adjustments based on feedback can lead to a more satisfying educational experience which improves student morale.
+Data-Driven Decision Making: The application provides actionable insights that support strategic planning and resource allocation.
+Flagging of concerning comments: Recurring very negative feedback would mean departments such as HR can flag concerns related to a lecturer teaching a course and make relevant decisions on steps forward.
+b)	For Lecturers
+Personalized Teaching Strategies: Instructors can gain insights into student perceptions and tailor their approaches to better meet student needs.
+Continuous Improvement: Regular feedback analysis allows for ongoing adjustments and improvements in teaching methods.
+c)	For Students
+Feelings of representation and voice amplification: Students' feedback is systematically analysed and addressed, making them feel heard and valued.
+Enhanced Learning Experience: Improvements driven by feedback lead to a more engaging and effective learning environment.
+Bridging of the bureaucratic gap: Students often fear reporting any concerns to authorities within the educational institution. With this application, they are able to forego that process and simply submit their evaluation that is to be acted upon
+
+Conclusion and Recommendations
+The Course Feedback Sentiment Analysis Application shows promising performance in accurately classifying student feedback. Future possible improvements may include
+Development of a front end
+Improvement of data accuracy through updated training data, further model optimization and use of techniques that better handle nuanced data
+By addressing these areas, the application can achieve higher accuracy and greater impact, ultimately contributing to improved educational experiences and outcomes.
+References
+Ali, M. (2023, March). NLTK Sentiment Analysis Tutorial: Text Mining & Analysis in Python. Www.datacamp.com. https://www.datacamp.com/tutorial/text-analytics-beginners-nltk
+Effective Strategies for Student Sentiment Analysis in Education. (n.d.). Www.linkedin.com. Retrieved July 16, 2024, from https://www.linkedin.com/pulse/effective-strategies-student-sentiment-analysis-education-uvsyf/
+
+Farooq, A. (2024, January 2). The Rise of Artificial Intelligence: A Technological Revolution. Medium; Medium. https://medium.com/@ahmadfarooq710/the-rise-of-artificial-intelligence-a-technological-revolution-c690e6301cd2#:~:text=Artificial%20Intelligence%20(AI)%20has%20emerged
+Milberg, T. (2024, April 28). The future of learning: AI is revolutionizing education 4.0. World Economic Forum. https://www.weforum.org/agenda/2024/04/future-learning-ai-revolutionizing-education-4-0/
+The. (2024, February 13). AI Tools for Sentiment Analysis: A Game-Changer for Project Managers. Medium; Medium. https://medium.com/@info_14390/ai-tools-for-sentiment-analysis-a-game-changer-for-project-managers-4ce81d1ba631#:~:text=AI%20tools%20have%20revolutionized%20sentiment
+Zhai, X., Chu, X., Chai, C. S., Jong, M. S. Y., Istenic, A., Spector, M., Liu, J.-B., Yuan, J., & Li, Y. (2021). A Review of Artificial Intelligence (AI) in Education from 2010 to 2020. Complexity, 2021(8812542), 1–18. https://doi.org/10.1155/2021/8812542
+
+
+
